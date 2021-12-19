@@ -1,0 +1,51 @@
+
+
+Q1. Find if the input string has all the alphabets (case neutral).
+
+Visulisation:- 
+
+Input Str 1 
+Str 1= A Quick broWn fOx jumps over The laZy dO 
+
+Output = Alphhabet in string are ...
+
+//DECLARATION
+
+DIM Str 1 As STRING
+DIM Char 1 As CHARACTER
+DIM i As INTEGER
+DIM isAlphabet As BOOLEAN
+
+//INITILISATION
+
+Str 1 = " "
+Char 1 = ' '
+i = 0
+isAlphabet = TRUE
+
+//INPUT
+
+Console.write ("Enter String to Proceed: ")
+Str = Console.readline
+Str 1 = UCASE(Str1)
+
+//Process
+FOR i = 1 TO LEN(Str1)
+Char1 = MID(Str1,i,1)
+IF Char1 < 'A' OR Char 1 > 'Z' 
+THEN isAplhabet  = FALSE
+IF isAlphabet = FALSE THEN Exit FOR
+Next i
+
+//OUTPUT
+
+IF isAlphabet = "TRUE"
+         THEN OUTPUT "All Characters are Alphabets"
+          ELSE OUTPUT "All Characters are not Alphabets"
+END IF 
+   
+
+ 
+
+ 
+
